@@ -1,12 +1,5 @@
-import React from "react";
-import DatePickerCard from "../components/DatePickerCard";
-
 const Home = () => {
-  return (
-    <div>
-      <DatePickerCard />
-    </div>
-  );
+  return <h1>Home</h1>;
 };
 
 export default Home;
