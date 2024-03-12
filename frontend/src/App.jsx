@@ -5,7 +5,8 @@ import Booking from "./routes/Booking";
 import ErrorPage from "./pages/ErrorPage";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import Login from "./routes/Login";
+import Login, { action as loginAction } from "./routes/Login";
+import Register, { action as registeraction } from "./routes/Register";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,14 @@ const router = createBrowserRouter([
         element: <Booking />,
       },
       {
-        path: "/Login",
+        path: "/login",
         element: <Login />,
+        action: loginAction,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+        action: registeraction,
       },
     ],
   },
