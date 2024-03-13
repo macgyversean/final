@@ -1,0 +1,16 @@
+{
+  "slides": [
+    {
+      "src": "./Photos/IMG_8464.jpg",
+      "alt": "picture of mountains at Max Patch"
+    },
+    {
+      "src": "./Photos/IMG_8520.jpg",
+      "alt": "picture of Tent at Max Patch"
+    },
+    {
+      "src": "./Photos/IMG_8608.jpg",
+      "alt": "picture of Sunrise at Max Patch"
+    }
+  ]
+}

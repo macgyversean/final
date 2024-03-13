@@ -1,36 +1,18 @@
 import React from "react";
 import ReactDatePicker from "react-datepicker";
-import DatePickerCard from "../components/DatePicker";
+import IMG_8464 from "../components/Data/Photos/IMG_8464.jpg";
+import IMG_8520 from "../components/Data/Photos/IMG_8520.jpg";
+import IMG_8608 from "../components/Data/Photos/IMG_8608.jpg";
+// import DatePickerCard from "../components/DatePicker";
 import { useState } from "react";
+import MyCard from "../components/myCard";
+import { slides } from "../components/Data/carouselData.json";
 
 const Booking = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
-    <div>
-      <div
-        className={`card ${isHovered ? "hovered" : ""}`}
-        onMouseEnter={handleHover}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className="carousel">
-          {/* Add your carousel images here */}
-          <img src="image1.jpg" alt="Image 1" />
-          <img src="image2.jpg" alt="Image 2" />
-          <img src="image3.jpg" alt="Image 3" />
-        </div>
-      </div>
-      <DatePickerCard />
+    <div className="booking">
+      <MyCard image={IMG_8464} />
     </div>
   );
 };
-
 export default Booking;
