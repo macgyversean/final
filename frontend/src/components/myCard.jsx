@@ -1,10 +1,11 @@
 import React from "react";
 import "./Card.css";
+import DemoCarousel from "./Data/carousel";
 
 export const myCard = ({ image }) => {
   return (
     <div className="card-container">
-      <img className="image-container" src={image} alt="Card Image" />
+      <DemoCarousel />
       <div className="full-container">
         <div className="card-title">
           <h3>Max Patch</h3>
