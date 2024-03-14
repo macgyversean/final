@@ -9,6 +9,10 @@ const Booking = () => {
       <MyCard />
       <MyCard />
       <MyCard />
+      <br></br>
+      <MyCard />
+      <MyCard />
+      <MyCard />
     </div>
   );
 };
