@@ -1,6 +1,5 @@
 import React from "react";
 import "../Carousel.css";
-
 import IMG_8464 from "../Data/Photos/IMG_8464.jpg";
 import IMG_8520 from "../Data/Photos/IMG_8520.jpg";
 import IMG_8608 from "../Data/Photos/IMG_8608.jpg";
@@ -9,7 +8,17 @@ import { Carousel } from "react-responsive-carousel";
 
 const DemoCarousel = () => {
   return (
-    <Carousel>
+    <Carousel
+      showlegend={false}
+      swipeable={true}
+      autoPlay
+      interval={10000}
+      infiniteLoop
+      showIndicators={false}
+      showArrows={false}
+      showStatus={false}
+      showThumbs={false}
+    >
       <div>
         <img src={IMG_8464} alt="Picture of mountains at Max Patch" />
         <p className="legend"></p>

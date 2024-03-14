@@ -19,10 +19,7 @@ export const myCard = ({ image }) => {
         <div className="front">
           <DemoCarousel />
           <div className="full-container">
-            <div className="card-title">
-              <h3>Max Patch</h3>
-            </div>
-            <div className="btn"></div>
+            <h3>Max Patch</h3>
             <button>
               <a>View more</a>
             </button>

@@ -8,11 +8,6 @@ const Booking = () => {
     <div className="booking">
       <MyCard />
       <MyCard />
-      <MyCard />
-      <br></br>
-      <MyCard />
-      <MyCard />
-      <MyCard />
     </div>
   );
 };

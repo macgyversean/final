@@ -9,4 +9,5 @@ nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
+  margin-bottom: 20px;
 }
