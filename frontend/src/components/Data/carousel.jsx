@@ -12,7 +12,7 @@ const DemoCarousel = () => {
       showlegend={false}
       swipeable={true}
       autoPlay
-      interval={10000}
+      interval={3000}
       infiniteLoop
       showIndicators={false}
       showArrows={false}

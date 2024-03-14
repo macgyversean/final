@@ -6,6 +6,7 @@ const primaryNav = [
   { title: "Booking", url: "/booking" },
   { title: "login", url: "/login" },
   { title: "register", url: "/register" },
+  { title: "logout", url: "/logout" },
 ];
 
 const Layout = () => {
