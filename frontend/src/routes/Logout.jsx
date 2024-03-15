@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { Navigate, useLoaderData, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useAuth } from "../AuthContext";
 
@@ -13,12 +13,12 @@ export async function loader() {
         authorization: `Bearer ${access_token}`,
       },
     });
+    console.log(response);
+    const statusCode = response.status;
+    return statusCode === 200 ? true : false;
   } catch (error) {
     console.error("Error:", error);
   }
-  console.log(response);
-  const statusCode = response.status;
-  return statusCode === 200 ? true : false;
 }
 
 const Logout = () => {
@@ -27,20 +27,22 @@ const Logout = () => {
   const navigate = useNavigate();
   const { setIsAuth } = useAuth();
 
-  let loggedIn = true;
+  let logged_in = true;
   if (response) {
     localStorage.clear();
-    loggedIn = false;
+    logged_in = false;
   } else {
-    alert("Error logging out");
+    alert("PROBLEM LOGGING OUT");
   }
-  if (loggedIn) {
-    return navigate("/");
-  }
+
   useEffect(() => {
-    setIsAuth(false);
-    return navigate("/");
-  }, [navigate, setIsAuth, response, navigate]);
+    if (!logged_in) {
+      setIsAuth(false);
+      navigate("/");
+    }
+  }, [logged_in, setIsAuth, navigate]);
+
+  return <Navigate to="/" replace={true} />;
 };
 
 export default Logout;

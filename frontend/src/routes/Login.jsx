@@ -6,6 +6,7 @@ import {
   Form,
   redirect,
   useActionData,
+  Navigate,
 } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
@@ -60,7 +61,7 @@ const login = () => {
       <button type="submit">Login User</button>
     </Form>
   ) : (
-    <Link to="/booking"></Link>
+    <Navigate to="/booking" />
   );
 };
 

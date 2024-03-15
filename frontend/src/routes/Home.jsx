@@ -1,7 +1,7 @@
 import React from "react";
-import DSC02607 from "/Users/seancarroll/repos/finalproject/frontend/src/components/Data/Photos/DSC02607.jpg";
-import A76A0463 from "/Users/seancarroll/repos/finalproject/frontend/src/components/Data/Photos/A76A0463.jpg";
-import A76A0233 from "/Users/seancarroll/repos/finalproject/frontend/src/components/Data/Photos/A76A0233.jpg";
+import DSC02607 from "../components/Data/Photos/DSC02607.jpg";
+import A76A0463 from "../components/Data/Photos/A76A0463.jpg";
+import A76A0233 from "../components/Data/Photos/A76A0233.jpg";
 import "./Home.css";
 import Footer from "../components/footer";
 
