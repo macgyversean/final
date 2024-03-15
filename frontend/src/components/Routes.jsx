@@ -6,11 +6,11 @@ import Register, { action as registeraction } from "../routes/Register";
 import Home from "../routes/Home";
 import Error from "../pages/ErrorPage";
 import Login, { action as loginAction } from "../routes/Login";
+
 import Logout, { loader as logoutLoader } from "../routes/Logout";
 import ClientBookings from "../routes/ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
 import FilloutForm, { action as FormAction } from "../routes/Form";
-
 const Routes = () => {
   const { isAuth } = useAuth();
 

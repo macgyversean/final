@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Form } from "react-router-dom";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "./Form.css";
 
 export async function action({ request }) {
   const formData = await request.formData();
@@ -19,31 +20,33 @@ const FilloutForm = () => {
   const [date, setDate] = useState(new Date());
   return (
     <Form method="post">
-      <label>
-        Your name
-        <input type="text" name="name" />
-      </label>
-      <label>
-        Your Email
-        <input type="text" name="email" />
-      </label>
-      <label>
-        Your phone
-        <input type="number" name="phone" />
-      </label>
-      <label>
-        Your location
-        <input type="text" name="location" />
-      </label>
-      <label>
-        Your message
-        <input type="text" name="message" />
-      </label>
-      <label>
-        Location of shoot
-        <ReactDatePicker selected={date} onChange={(date) => setDate(date)} />
-      </label>
-      <button type="submit">Submit Form</button>
+      <div className="forms1">
+        <label>
+          Your name
+          <input type="text" name="name" />
+        </label>
+        <label>
+          Your Email
+          <input type="text" name="email" />
+        </label>
+        <label>
+          Your phone
+          <input type="number" name="phone" />
+        </label>
+        <label>
+          Location of shoot
+          <input type="text" name="location" />
+        </label>
+        <label>
+          Your message
+          <input type="text" name="message" />
+        </label>
+        <label>
+          Date of shoot
+          <ReactDatePicker selected={date} onChange={(date) => setDate(date)} />
+        </label>
+        <button type="submit">Submit Form</button>
+      </div>
     </Form>
   );
 };

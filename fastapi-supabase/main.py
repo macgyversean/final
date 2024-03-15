@@ -63,6 +63,7 @@ def login_user(request: User):
     })
     return res
 
-@app.get("/logout")
+@app.post("/logout")
 def logout_user():
-    res = supabase.auth.sign_out()
+    response = supabase.auth.sign_out()
+    return "success"

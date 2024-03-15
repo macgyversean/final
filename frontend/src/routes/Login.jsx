@@ -29,9 +29,10 @@ export async function action({ request }) {
 
     const statusCode = response.status;
     const data = await response.json();
-    const { access_Token } = data;
+    const { session } = data;
+
     localStorage.clear();
-    localStorage.setItem("access_Token", access_Token);
+    localStorage.setItem("access_Token", session.access_token);
     return statusCode === 200 ? true : false;
   } catch (error) {
     console.error("ERROR: ", error);
@@ -59,7 +60,7 @@ const login = () => {
       <button type="submit">Login User</button>
     </Form>
   ) : (
-    <Link to="/">You are now logged in</Link>
+    <Link to="/booking"></Link>
   );
 };
 
