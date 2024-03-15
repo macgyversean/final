@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
+import { useAuth } from "../AuthContext";
+import { useEffect } from "react";
 
 export async function action({ request }) {
   const formData = await request.formData();
@@ -25,7 +27,12 @@ export async function action({ request }) {
       body: JSON.stringify(logindata),
     });
 
-    return response;
+    const statusCode = response.status;
+    const data = await response.json();
+    const { access_Token } = data;
+    localStorage.clear();
+    localStorage.setItem("access_Token", access_Token);
+    return statusCode === 200 ? true : false;
   } catch (error) {
     console.error("ERROR: ", error);
     return false;
@@ -33,23 +40,26 @@ export async function action({ request }) {
 }
 
 const login = () => {
+  const { isAuth, setIsAuth } = useAuth();
   const response = useActionData();
-  console.log(response);
-  return (
-    <>
-      <h2>Login</h2>
-      <Form method="post">
-        <label>
-          Your Email
-          <input type="text" name="email" />
-        </label>
-        <label>
-          Your Password
-          <input type="password" name="password" />
-        </label>
-        <button type="submit">Login User</button>
-      </Form>
-    </>
+
+  useEffect(() => {
+    setIsAuth(response);
+  }, [response, setIsAuth]);
+  return !isAuth ? (
+    <Form method="post">
+      <label>
+        Your Email
+        <input type="text" name="email" />
+      </label>
+      <label>
+        Your Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Login User</button>
+    </Form>
+  ) : (
+    <Link to="/">You are now logged in</Link>
   );
 };
 
