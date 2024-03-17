@@ -67,3 +67,8 @@ def login_user(request: User):
 def logout_user():
     response = supabase.auth.sign_out()
     return "success"
+
+@app.post("/Bookings")
+data  = supabase.table('Bookings': Table)
+.insert({"id":  "name": "Denmark"})
+# .execute()
