@@ -10,6 +10,7 @@ import bcrypt
 from fastapi import FastAPI
 from app.models import User
 from db.supabase import create_supabase_client
+from Bookings import Bookings
 
 app = FastAPI()
 
@@ -69,6 +70,15 @@ def logout_user():
     return "success"
 
 @app.post("/Bookings")
-data  = supabase.table('Bookings': Table)
-.insert({"id":  "name": "Denmark"})
-# .execute()
+async def add_booking(request: Bookings):
+    res = supabase.table('Bookings').insert({
+        "name": request.name,
+        "email": request.email,
+        "phone": request.phone,
+        "location_of_shoot": request.location_of_shoot,
+        "message": request.message,
+        "date": request.date,
+        "Owner_Id": request.Owner_Id
+    }).execute()
+    return res
+

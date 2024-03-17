@@ -45,6 +45,14 @@ const FilloutForm = () => {
           Date of shoot
           <ReactDatePicker selected={date} onChange={(date) => setDate(date)} />
         </label>
+        <label>
+          <input
+            type="hidden"
+            name="user_id"
+            value={localStorage.getItem("keyname")}
+            required
+          />
+        </label>
         <button type="submit">Submit Form</button>
       </div>
     </Form>
