@@ -2,6 +2,8 @@ import React from "react";
 import DSC02607 from "../components/Data/Photos/DSC02607.jpg";
 import A76A0463 from "../components/Data/Photos/A76A0463.jpg";
 import A76A0233 from "../components/Data/Photos/A76A0233.jpg";
+import A76 from "../components/Data/Photos/A76A0399.jpg";
+import IMG_8608 from "../components/Data/Photos/IMG_8608.jpg";
 import "./Home.css";
 import Footer from "../components/footer";
 
@@ -10,7 +12,6 @@ const Home = () => {
     <div className="home">
       <div className="background-image"></div>
       <div className="about-me">
-        <h1>About Me</h1>
         <p>
           <img src={DSC02607} className="Image"></img>
         </p>
@@ -25,6 +26,12 @@ const Home = () => {
         </div>
         <div>
           <img src={A76A0233} className="Image" />
+        </div>
+        <div>
+          <img src={A76} className="Image" />
+        </div>
+        <div>
+          <img src={IMG_8608} className="Image" />
         </div>
         <div>
           <Footer />
