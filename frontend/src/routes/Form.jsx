@@ -12,9 +12,31 @@ export async function action({ request }) {
   const name = formData.get("name");
   const email = formData.get("email");
   const phone = formData.get("phone");
-  const location = formData.get("location");
+  const location_of_shoot = formData.get("location_of_shoot");
   const message = formData.get("message");
-  const logindata = { name, email, phone, date, location, message };
+  const date = formData.get("date");
+  const Owner_ID = formData.get("Owner_ID");
+  const logindata = {
+    name,
+    email,
+    phone,
+    date,
+    location_of_shoot,
+    message,
+    date,
+    Owner_ID,
+  };
+
+  const url = `${import.meta.env.VITE_SOURCE_URL}/Bookings`;
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(logindata),
+  });
+
+  return response;
 }
 const FilloutForm = () => {
   const [date, setDate] = useState(new Date());
@@ -35,7 +57,7 @@ const FilloutForm = () => {
         </label>
         <label>
           Location of shoot
-          <input type="text" name="location" />
+          <input type="text" name="location_of_shoot" />
         </label>
         <label>
           Your message
@@ -43,12 +65,18 @@ const FilloutForm = () => {
         </label>
         <label>
           Date of shoot
-          <ReactDatePicker selected={date} onChange={(date) => setDate(date)} />
+          <ReactDatePicker
+            dateFormat="yyyy-MM-dd"
+            value={date}
+            selected={date}
+            onChange={(date) => setDate(date)}
+            name="date"
+          />
         </label>
         <label>
           <input
             type="hidden"
-            name="user_id"
+            name="Owner_ID"
             value={localStorage.getItem("keyname")}
             required
           />

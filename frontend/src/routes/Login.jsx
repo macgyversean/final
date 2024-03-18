@@ -33,7 +33,8 @@ export async function action({ request }) {
     const { session } = data;
 
     localStorage.clear();
-    localStorage.setItem("access_Token", session.access_token);
+    localStorage.setItem("access_token", session.access_token);
+    localStorage.setItem("keyname", session.user.id);
     return statusCode === 200 ? true : false;
   } catch (error) {
     console.error("ERROR: ", error);

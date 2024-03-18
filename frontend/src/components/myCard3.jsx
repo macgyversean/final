@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./Card.css";
-import DemoCarousel from "./Data/carousel";
 import ReactDatePicker from "react-datepicker";
 import reactCardFlip from "react-card-flip";
 import { Link } from "react-router-dom";
+import DemoCarousel3 from "./Data/carousel3";
 
-export const myCard = ({ image }) => {
+export const MyCard2 = ({ image }) => {
   return (
     <div className="card-container">
       <div className="card">
         <div className="front">
-          <DemoCarousel />
+          <DemoCarousel3 />
           <div className="full-container">
-            <h3>Max Patch</h3>
+            <h3>North Carolina</h3>
             <Link to="/Form">
               <button>
                 <p>Book a date</p>
@@ -26,4 +26,4 @@ export const myCard = ({ image }) => {
   );
 };
 
-export default myCard;
+export default MyCard2;

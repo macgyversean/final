@@ -78,7 +78,7 @@ async def add_booking(request: Bookings):
         "location_of_shoot": request.location_of_shoot,
         "message": request.message,
         "date": request.date,
-        "Owner_Id": request.Owner_Id
+        "Owner_ID": request.Owner_ID
     }).execute()
     return res
 
