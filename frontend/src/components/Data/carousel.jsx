@@ -9,7 +9,8 @@ import { Carousel } from "react-responsive-carousel";
 const DemoCarousel = () => {
   return (
     <Carousel
-      showlegend={false}
+      showSlide={false}
+      showlegend={true}
       swipeable={true}
       autoPlay
       interval={3000}

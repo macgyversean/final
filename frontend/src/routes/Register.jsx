@@ -32,7 +32,9 @@ const UserCreate = () => {
           Password
           <input type="password" name="password" />
         </label>
-        <button type="submit">Add New User</button>
+        <Link to="/login">
+          <button type="submit">Add New User</button>
+        </Link>
       </Form>
     </>
   );

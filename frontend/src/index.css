@@ -13,10 +13,33 @@ nav ul {
   background-color: antiquewhite;
   padding: 20px;
 }
-
+.footerText {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-me {
   font-family: cursive;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footerText {
+    flex-shrink: auto;
+  }
 }

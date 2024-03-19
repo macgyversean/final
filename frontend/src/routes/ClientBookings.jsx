@@ -1,25 +1,36 @@
 import { useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
+import styles from "./ClientBookings.module.css";
+import Footer from "../components/footer";
+
+export async function loader() {
+  const url = `${import.meta.env.VITE_SOURCE_URL}/mybookings`;
+  const data = await fetch(url).then((response) => response.json());
+  return data;
+}
 
 const BookingData = () => {
-  useEffect(() => {
-    const url = `${import.meta.env.VITE_SOURCE_URL}/mybookings`;
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      });
-  }, []);
-
+  const { data } = useLoaderData();
+  console.log(data);
   return (
-    <div>
+    <>
       <h1>My Bookings</h1>
-    </div>
+      <div>
+        <ul>
+          {data.map((booking, index) => (
+            <li key={booking.id} className={styles.Mybookings}>
+              <p>{booking.name}</p>
+              <p>{booking.email}</p>
+              <p>{booking.phone}</p>
+              <p>{booking.location_of_shoot}</p>
+              <p>{booking.date}</p>
+              <p>{booking.message}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 

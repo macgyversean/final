@@ -11,9 +11,6 @@ const Booking = () => {
       <MyCard />
       <MyCard1 />
       <MyCard2 />
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

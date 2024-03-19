@@ -12,7 +12,7 @@ export const MyCard2 = ({ image }) => {
         <div className="front">
           <DemoCarousel3 />
           <div className="full-container">
-            <h3>North Carolina</h3>
+            <h3>Florida</h3>
             <Link to="/Form">
               <button>
                 <p>Book a date</p>

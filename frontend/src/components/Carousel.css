@@ -15,6 +15,7 @@
 .carousel.slide .legend {
   display: none;
   position: fixed;
+  bottom: -40px;
 }
 .booking {
   display: flex;

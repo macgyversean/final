@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { useAuth } from "../AuthContext";
 import { useEffect } from "react";
-import { Form } from "react-router-dom";
+import {
+  Form,
+  Link,
+  redirect,
+  useActionData,
+  Navigate,
+} from "react-router-dom";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./Form.css";
@@ -35,10 +41,18 @@ export async function action({ request }) {
     },
     body: JSON.stringify(logindata),
   });
+  if (response && response.status === 200) {
+    console.log("response", response);
+    return redirect("/mybookings");
+  }
 
   return response;
 }
 const FilloutForm = () => {
+  // const response = useActionData();
+  // useEffect(() => {
+  //   }
+  // }, [response, redirect]);
   const [date, setDate] = useState(new Date());
   return (
     <Form method="post">

@@ -33,10 +33,9 @@ const Home = () => {
         <div>
           <img src={IMG_8608} className="Image" />
         </div>
-        <div>
-          <Footer />
-        </div>
+        <div></div>
       </div>
+      <Footer />
     </div>
   );
 };
