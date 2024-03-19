@@ -55,6 +55,7 @@ const Routes = () => {
           path: "/myBookings",
           element: <ClientBookings />,
           loader: bookingLoader,
+          errorElement: <Error />,
         },
         {
           path: "/form",
