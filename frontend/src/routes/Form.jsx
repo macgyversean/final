@@ -49,10 +49,6 @@ export async function action({ request }) {
   return response;
 }
 const FilloutForm = () => {
-  // const response = useActionData();
-  // useEffect(() => {
-  //   }
-  // }, [response, redirect]);
   const [date, setDate] = useState(new Date());
   return (
     <Form method="post">

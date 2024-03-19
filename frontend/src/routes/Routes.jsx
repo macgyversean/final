@@ -1,18 +1,16 @@
 import { createBrowserRouter, Form, RouterProvider } from "react-router-dom";
 import { useAuth } from "../AuthContext";
 import Layout from "../pages/Layout";
-import Booking from "../routes/Booking";
-import Register, { action as registeraction } from "../routes/Register";
-import Home from "../routes/Home";
+import Booking from "./Booking";
+import Register, { action as registeraction } from "./Register";
+import Home from "./Home";
 import Error from "../pages/ErrorPage";
-import Login, { action as loginAction } from "../routes/Login";
+import Login, { action as loginAction } from "./Login";
 
-import Logout, { loader as logoutLoader } from "../routes/Logout";
-import ClientBookings, {
-  loader as bookingLoader,
-} from "../routes/ClientBookings";
+import Logout, { loader as logoutLoader } from "./Logout";
+import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
-import FilloutForm, { action as FormAction } from "../routes/Form";
+import FilloutForm, { action as FormAction } from "./Form";
 const Routes = () => {
   const { isAuth } = useAuth();
 

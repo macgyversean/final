@@ -12,10 +12,11 @@
 .carousel.carousel-slider {
   max-height: 220px;
 }
-.carousel.slide .legend {
+.carousel .slide .legend {
   display: none;
   position: fixed;
-  bottom: -40px;
+  opacity: 100%;
+  bottom: 540px;
 }
 .booking {
   display: flex;

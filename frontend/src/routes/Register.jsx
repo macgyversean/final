@@ -16,7 +16,9 @@ export async function action({ request }) {
     },
     body: JSON.stringify(data),
   });
-
+  if (response.ok) {
+    return redirect("/login");
+  }
   return response;
 }
 const UserCreate = () => {
@@ -32,9 +34,7 @@ const UserCreate = () => {
           Password
           <input type="password" name="password" />
         </label>
-        <Link to="/login">
-          <button type="submit">Add New User</button>
-        </Link>
+        <button type="submit">Add New User</button>
       </Form>
     </>
   );
