@@ -1,10 +1,20 @@
 import React from "react";
 import "../Carousel.css";
-import IMG_8464 from "../Data/Photos/IMG_8464.jpg";
-import IMG_8520 from "../Data/Photos/IMG_8520.jpg";
-import IMG_8608 from "../Data/Photos/IMG_8608.jpg";
+import { supabase } from "../../config/supabase.Config";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+
+export async function loader() {
+  const { data, error } = await supabase.storage
+    .from("maxpatch")
+    .list("images", {
+      transform: {
+        width: 100,
+        height: 100,
+        resize: "contain",
+      },
+    });
+}
 
 const DemoCarousel = () => {
   return (
@@ -21,15 +31,32 @@ const DemoCarousel = () => {
       showThumbs={false}
     >
       <div>
-        <img src={IMG_8464} alt="Picture of mountains at Max Patch" />
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8464.jpg"
+          alt="Picture of mountains at Max Patch"
+        />
         <p className="legend"></p>
       </div>
       <div>
-        <img src={IMG_8520} alt="Picture of a tent at Max Patch" />
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8520.jpg"
+          alt="Picture of a tent at Max Patch"
+        />
         <p className="legend"></p>
       </div>
       <div>
-        <img src={IMG_8608} alt="Picture of the sunset at Max Patch" />
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8591.jpg"
+          alt="Picture of the sunset at Max Patch"
+        />
+        <p className="legend"></p>
+      </div>
+
+      <div>
+        <img
+          src="https:/hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8591.jpg"
+          alt="Picture of the sunset at Max Patch"
+        />
         <p className="legend"></p>
       </div>
     </Carousel>

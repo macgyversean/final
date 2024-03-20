@@ -6,7 +6,8 @@ import Register, { action as registeraction } from "./Register";
 import Home from "./Home";
 import Error from "../pages/ErrorPage";
 import Login, { action as loginAction } from "./Login";
-
+import Gallery from "./Gallery";
+import JaviGallery from "./PagesInGallery.jsx/Javi/Javi/JaviPage";
 import Logout, { loader as logoutLoader } from "./Logout";
 import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
@@ -42,6 +43,14 @@ const Routes = () => {
         {
           path: "/Booking",
           element: <Booking />,
+        },
+        {
+          path: "/Gallery",
+          element: <Gallery />,
+        },
+        {
+          path: "/JaviPage",
+          element: <JaviGallery />,
         },
       ],
     },

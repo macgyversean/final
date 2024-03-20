@@ -15,6 +15,18 @@ import img_3890 from "../Data/Photos/DSC03890.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+export async function loader() {
+  const { data, error } = await supabase.storage
+    .from("maxpatch")
+    .list("images", {
+      transform: {
+        width: 100,
+        height: 100,
+        resize: "contain",
+      },
+    });
+}
+
 const DemoCarousel3 = () => {
   return (
     <Carousel

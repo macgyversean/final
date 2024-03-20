@@ -71,7 +71,7 @@ const FilloutForm = () => {
         </label>
         <label>
           Your message
-          <input type="text" name="message" />
+          <input type="text" name="message" style={{ maxWidth: "500px" }} />
         </label>
         <label>
           Date of shoot

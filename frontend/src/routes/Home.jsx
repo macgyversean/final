@@ -1,22 +1,32 @@
 import React from "react";
-import DSC02607 from "../components/Data/Photos/DSC02607.jpg";
-import A76A0463 from "../components/Data/Photos/A76A0463.jpg";
-import A76A0233 from "../components/Data/Photos/A76A0233.jpg";
-import A76 from "../components/Data/Photos/A76A0399.jpg";
-import IMG_8608 from "../components/Data/Photos/IMG_8608.jpg";
+
 import "./Home.css";
+import { supabase } from "../config/supabase.Config";
+import { useState, useEffect } from "react";
 import Footer from "../components/footer";
 
+export async function loader() {
+  const { data, error } = await supabase.storage.from("home").list("images", {
+    transform: {
+      width: 100,
+      height: 100,
+      resize: "contain",
+    },
+  });
+}
 const Home = () => {
   return (
-    <div className="home">
-      <div className="background-image"></div>
+    <div className="background-image">
       <div className="about-me">
-        <p>
-          <img src={DSC02607} className="Image"></img>
-        </p>
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/DSC02607.jpg"
+          className="HomeImages"
+        ></img>
         <div className="about-me-text">
-          <img src={A76A0463} className="Images"></img>
+          <img
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0463.jpg"
+            className="Images"
+          ></img>
           <p className="about-me">
             I am a photographer and a web developer. I have been a photographer
             since 2019 and a web developer since 2024. I have a passion for
@@ -25,17 +35,26 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <img src={A76A0233} className="Image" />
+          <img
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0362.JPG"
+            className="HomeImages"
+          ></img>
         </div>
         <div>
-          <img src={A76} className="Image" />
+          <img
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A1869.JPG"
+            className="HomeImages"
+          ></img>
         </div>
         <div>
-          <img src={IMG_8608} className="Image" />
+          <img
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/IMG_8608.jpg"
+            className="HomeImages"
+          ></img>
         </div>
         <div></div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

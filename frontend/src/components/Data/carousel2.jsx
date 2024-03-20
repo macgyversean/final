@@ -6,6 +6,16 @@ import IMG_7227 from "../Data/Photos/DSC07227.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+export async function loader() {
+  const { data, error } = await supabase.storage.from("connor").list("images", {
+    transform: {
+      width: 100,
+      height: 100,
+      resize: "contain",
+    },
+  });
+}
+
 const DemoCarousel1 = () => {
   return (
     <Carousel
