@@ -47,6 +47,17 @@ import img_4159 from "./yas/1Q8A4159.jpg";
 
 import { Carousel } from "react-responsive-carousel";
 
+
+export async function loader() {
+    const { data, error } = await supabase.storage.from("home").list("images", {
+      transform: {
+        width: 100,
+        height: 100,
+        resize: "contain",
+      },
+    });
+  }
+  
 const YasCarousel = () => {
   return (
     <Carousel
