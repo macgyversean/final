@@ -8,6 +8,9 @@ import Error from "../pages/ErrorPage";
 import Login, { action as loginAction } from "./Login";
 import Gallery from "./Gallery";
 import JaviGallery from "./JaviPage";
+import KuwaitGallery from "./KuwaitPage";
+import YasGallery from "./YasminePage";
+import MaxPatchGallery from "./MaxPatchPage";
 import Logout, { loader as logoutLoader } from "./Logout";
 import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
@@ -51,6 +54,18 @@ const Routes = () => {
         {
           path: "/JaviPage",
           element: <JaviGallery />,
+        },
+        {
+          path: "/YasminePage",
+          element: <YasGallery />,
+        },
+        {
+          path: "/KuwaitPage",
+          element: <KuwaitGallery />,
+        },
+        {
+          path: "/max_patch",
+          element: <MaxPatchGallery />,
         },
       ],
     },

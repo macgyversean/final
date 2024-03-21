@@ -21,7 +21,6 @@ const DemoCarousel = () => {
     <Carousel
       showSlide={false}
       showlegend={true}
-      swipeable={true}
       autoPlay
       interval={3000}
       infiniteLoop

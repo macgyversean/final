@@ -71,3 +71,11 @@
 .slide-hidden {
   display: none;
 }
+.Galleries {
+  display: flex;
+  align-items: center;
+  max-height: fit-content;
+  gap: 1.5rem;
+  max-width: fit-content;
+  flex-wrap: wrap;
+}

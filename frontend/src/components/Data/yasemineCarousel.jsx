@@ -4,16 +4,6 @@ import { supabase } from "../../config/supabase.Config";
 
 import { Carousel } from "react-responsive-carousel";
 
-export async function loader() {
-  const { data, error } = await supabase.storage.from("home").list("images", {
-    transform: {
-      width: 100,
-      height: 100,
-      resize: "contain",
-    },
-  });
-}
-
 const YasCarousel = () => {
   return (
     <Carousel
@@ -27,9 +17,6 @@ const YasCarousel = () => {
       showArrows={false}
       showStatus={false}
       showThumbs={false}
-      centerMode={true}
-      centerSlidePercentage={90}
-      dynamicHeight={true}
     >
       <div>
         <img

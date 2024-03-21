@@ -4,17 +4,17 @@ import DemoCarousel from "./Data/carousel";
 import ReactDatePicker from "react-datepicker";
 import reactCardFlip from "react-card-flip";
 import { Link } from "react-router-dom";
-import YasCarousel from "./Data/yasemineCarousel";
+import KuwaitCarousel from "./Data/kuwaitCarousel";
 
-export const YasmineCard = ({ image }) => {
+export const KuwaitCard = ({ image }) => {
   return (
     <div className="card-container">
       <div className="card">
         <div className="front">
-          <YasCarousel />
+          <KuwaitCarousel style={{ width: "100%", height: "100%" }} />
           <div className="full-container">
-            <h3>Fort Mill</h3>
-            <Link to="/YasminePage">
+            <h3>Kuwait</h3>
+            <Link to="/KuwaitPage">
               <button>
                 <p>View Gallery</p>
               </button>
@@ -27,4 +27,4 @@ export const YasmineCard = ({ image }) => {
   );
 };
 
-export default YasmineCard;
+export default KuwaitCard;
