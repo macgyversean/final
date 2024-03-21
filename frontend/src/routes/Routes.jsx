@@ -7,7 +7,7 @@ import Home from "./Home";
 import Error from "../pages/ErrorPage";
 import Login, { action as loginAction } from "./Login";
 import Gallery from "./Gallery";
-import JaviGallery from "./PagesInGallery.jsx/Javi/Javi/JaviPage";
+import JaviGallery from "./JaviPage";
 import Logout, { loader as logoutLoader } from "./Logout";
 import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";

@@ -4,17 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { supabase } from "../../config/supabase.Config";
 
-export async function loader() {
-  const { data, error } = await supabase.storage.from("javi").list("images", {
-    transform: {
-      width: 100,
-      height: 100,
-      resize: "contain",
-    },
-  });
-}
-
-const JaviCarousel = () => {
+const JaviCarousel = (data) => {
   return (
     <Carousel
       showSlide={false}
