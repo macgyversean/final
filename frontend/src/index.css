@@ -20,7 +20,7 @@ nav ul {
   align-items: center;
 }
 .about-me {
-  font-family: cursive;
+  font-family: "Helvetica Neue", sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

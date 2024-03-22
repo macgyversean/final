@@ -53,7 +53,7 @@ const DemoCarousel = () => {
 
       <div>
         <img
-          src="https:/hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8591.jpg"
+          src="https:/hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_7789.jpg"
           alt="Picture of the sunset at Max Patch"
         />
         <p className="legend"></p>

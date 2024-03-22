@@ -4,6 +4,7 @@ import Navigation from "../components/navigation";
 const primaryNav = [
   { title: "Home", url: "/" },
   { title: "Gallery", url: "/gallery" },
+  { title: "Pricing", url: "/pricing" },
   { title: "Booking", url: "/booking" },
   { title: "login", url: "/login" },
   { title: "register", url: "/register" },

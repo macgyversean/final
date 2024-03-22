@@ -15,6 +15,7 @@ import Logout, { loader as logoutLoader } from "./Logout";
 import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
 import FilloutForm, { action as FormAction } from "./Form";
+import Pricing from "./Pricing";
 const Routes = () => {
   const { isAuth } = useAuth();
 
@@ -50,6 +51,10 @@ const Routes = () => {
         {
           path: "/Gallery",
           element: <Gallery />,
+        },
+        {
+          path: "/Pricing",
+          element: <Pricing />,
         },
         {
           path: "/JaviPage",
