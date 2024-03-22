@@ -85,6 +85,5 @@ async def add_booking(request: Bookings):
 @app.get("/mybookings")
 def get_bookings():
     user_response = supabase.auth.get_user()
-    print(user_response.user.id)
     response = supabase.table('Bookings').select("*").eq("Owner_ID",user_response.user.id).execute()
     return response

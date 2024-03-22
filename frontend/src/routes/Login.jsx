@@ -62,7 +62,7 @@ const login = () => {
       <button type="submit">Login User</button>
     </Form>
   ) : (
-    <Navigate to="/booking" />
+    <Navigate to="/gallery" />
   );
 };
 

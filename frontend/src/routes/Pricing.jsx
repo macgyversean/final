@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Pricing.module.css";
 
 const Pricing = () => {
   return (
@@ -7,9 +8,8 @@ const Pricing = () => {
         src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/DSC02667.jpg"
         className="PricingImage"
       ></img>
-      <p>Choose a package that suits your needs:</p>
-      <ul>
-        <li>
+      <ul className="Texts">
+        <li className="Text1">
           <h2>Basic Package</h2>
           <p>Includes:</p>
           <ul>
@@ -19,7 +19,8 @@ const Pricing = () => {
           </ul>
           <p>Price: $200</p>
         </li>
-        <li>
+        <br></br>
+        <li className="Text2">
           <h2>Standard Package</h2>
           <p>Includes:</p>
           <ul>
@@ -29,7 +30,8 @@ const Pricing = () => {
           </ul>
           <p>Price: $350</p>
         </li>
-        <li>
+        <br></br>
+        <li className="Text3">
           <h2>Premium Package</h2>
           <p>Includes:</p>
           <ul>

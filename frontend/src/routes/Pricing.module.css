@@ -1,0 +1,28 @@
+.Text1 {
+  display: block;
+  width: 40%;
+  display: flex;
+}
+.Text2 {
+  display: inline;
+  width: 40%;
+  display: flex;
+}
+
+.Text3 {
+  display: inline-block;
+  width: 40%;
+  display: flex;
+}
+
+.Texts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: antiquewhite;
+
+  .li {
+    width: 40%;
+    display: inline;
+  }
+}

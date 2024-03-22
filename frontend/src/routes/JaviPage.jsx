@@ -1,5 +1,6 @@
 // import styles from "./Javi.modules.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { Link } from "react-router-dom";
 
 const JaviGallery = () => {
   const photoArray = [
@@ -21,20 +22,29 @@ const JaviGallery = () => {
     "https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/javi/DSC03111.jpg",
   ];
   return (
-    <div style={{ padding: "10px" }}>
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry gutter="10px">
-          {photoArray.map((image, i) => (
-            <img
-              key={i}
-              src={image}
-              style={{ width: "100%", display: "block" }}
-              alt=""
-            />
-          ))}
-        </Masonry>
-      </ResponsiveMasonry>
-    </div>
+    <>
+      <div className="Chat">
+        <Link to="/Form">
+          <button>
+            <p>Let's Talk</p>
+          </button>
+        </Link>
+      </div>
+      <div style={{ padding: "10px" }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry gutter="10px">
+            {photoArray.map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                style={{ width: "100%", display: "block" }}
+                alt=""
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+    </>
   );
 };
 export default JaviGallery;

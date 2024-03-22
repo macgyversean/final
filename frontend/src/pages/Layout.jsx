@@ -5,7 +5,7 @@ const primaryNav = [
   { title: "Home", url: "/" },
   { title: "Gallery", url: "/gallery" },
   { title: "Pricing", url: "/pricing" },
-  { title: "Booking", url: "/booking" },
+  // { title: "Booking", url: "/booking" },
   { title: "login", url: "/login" },
   { title: "register", url: "/register" },
   { title: "logout", url: "/logout" },

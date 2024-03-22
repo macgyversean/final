@@ -22,12 +22,12 @@ const Home = () => {
           src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/DSC02607.jpg"
           className="HomeImages"
         ></img>
-        <div className="about-me-text">
+        <div className="about-me-box">
           <img
             src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0463.jpg"
             className="Images"
           ></img>
-          <p className="about-me">
+          <p className="about-me-text">
             I am a photographer and a web developer. I have been a photographer
             since 2019 and a web developer since 2024. I have a passion for
             volleyball, rockclimbing, adrenaline junkie, and just anything

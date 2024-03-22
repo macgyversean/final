@@ -19,6 +19,11 @@ export const MyCard = ({ image }) => {
                 <p>View Gallery</p>
               </button>
             </Link>
+            <Link to="/Form">
+              <button>
+                <p>Book a date</p>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="back"></div>
