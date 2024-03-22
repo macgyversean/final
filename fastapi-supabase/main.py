@@ -1,16 +1,20 @@
 from fastapi import FastAPI
 from typing import Union
 from uuid import uuid4
-import bcrypt
 from fastapi import FastAPI 
 from fastapi.middleware.cors import CORSMiddleware 
 from app.models import User
 from db.supabase import create_supabase_client
 import bcrypt
+import stripe
+import os
 from fastapi import FastAPI
 from app.models import User
 from db.supabase import create_supabase_client
 from Bookings import Bookings
+
+stripe.api_key = "sk_test_51OxEw9DOd26wYEUAH0S6PyjqOdfGi1noqFD2WYtzmIzDx8HfES5yP1NjUtKjlWuLkLiEjQA1xPt8jP8jXwi5NogR00sbfiu9vl"
+
 
 app = FastAPI()
 
@@ -71,6 +75,8 @@ def logout_user():
 
 @app.post("/Bookings")
 async def add_booking(request: Bookings):
+
+
     res = supabase.table('Bookings').insert({
         "name": request.name,
         "email": request.email,
@@ -79,6 +85,7 @@ async def add_booking(request: Bookings):
         "message": request.message,
         "date": request.date,
         "Owner_ID": request.Owner_ID
+       
     }).execute()
     return res
 
@@ -87,3 +94,28 @@ def get_bookings():
     user_response = supabase.auth.get_user()
     response = supabase.table('Bookings').select("*").eq("Owner_ID",user_response.user.id).execute()
     return response
+
+@app.post("/create-checkout-session")
+def create_checkout_session():
+    session = stripe.checkout.Session.create(
+        payment_method_types=['card'],
+        ui_mode='embedded',
+        line_items=[
+            {
+                'price' : 'price_1OxFXIDOd26wYEUAUFdxFZFo',
+                'quantity': 1,
+            },
+        ],
+        mode='payment',
+        return_url="http://localhost:8000/return?session_id={CHECKOUT_SESSION_ID}",
+    )
+    print(session)
+    print(session.id)
+    return session
+
+@app.get('/session-status')
+def session_status(request):
+  session = stripe.checkout.Session.retrieve(request.args.get('session_id'))
+
+  return session
+

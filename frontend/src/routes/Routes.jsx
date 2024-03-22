@@ -16,6 +16,8 @@ import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
 import FilloutForm, { action as FormAction } from "./Form";
 import Pricing from "./Pricing";
+import Checkout from "./Checkout";
+// import Return from "./Return";
 const Routes = () => {
   const { isAuth } = useAuth();
 
@@ -72,6 +74,14 @@ const Routes = () => {
           path: "/max_patch",
           element: <MaxPatchGallery />,
         },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        // {
+        //   path: "/return",
+        //   element: <Return />,
+        // },
       ],
     },
   ];
