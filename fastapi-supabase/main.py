@@ -13,8 +13,6 @@ from app.models import User
 from db.supabase import create_supabase_client
 from Bookings import Bookings
 
-stripe.api_key = "sk_test_51OxEw9DOd26wYEUAH0S6PyjqOdfGi1noqFD2WYtzmIzDx8HfES5yP1NjUtKjlWuLkLiEjQA1xPt8jP8jXwi5NogR00sbfiu9vl"
-
 
 app = FastAPI()
 
