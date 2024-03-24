@@ -1,5 +1,6 @@
 // import styles from "./Javi.modules.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { Link } from "react-router-dom";
 
 const YasGallery = () => {
   const photoArray = [
@@ -48,24 +49,31 @@ const YasGallery = () => {
     "https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A4159.jpg?t=2024-03-21T16%3A57%3A47.643Z",
   ];
   return (
-    <div style={{ padding: "10px" }}>
-      <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-        transitionDuration={500}
-        disableImagesLoaded={false}
-      >
-        <Masonry gutter="10px">
-          {photoArray.map((image, i) => (
-            <img
-              key={i}
-              src={image}
-              style={{ width: "100%", display: "block" }}
-              alt=""
-            />
-          ))}
-        </Masonry>
-      </ResponsiveMasonry>
-    </div>
+    <>
+      <Link to="/Form">
+        <button>
+          <p>Let's Talk</p>
+        </button>
+      </Link>
+      <div style={{ padding: "10px" }}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          transitionDuration={500}
+          disableImagesLoaded={false}
+        >
+          <Masonry gutter="10px">
+            {photoArray.map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                style={{ width: "100%", display: "block" }}
+                alt=""
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+    </>
   );
 };
 export default YasGallery;

@@ -36,13 +36,13 @@ const Home = () => {
         </div>
         <div>
           <img
-            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0362.JPG"
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0362.jpg"
             className="HomeImages"
           ></img>
         </div>
         <div>
           <img
-            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A1869.JPG"
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A1869.jpg"
             className="HomeImages"
           ></img>
         </div>

@@ -43,7 +43,7 @@ export async function action({ request }) {
   });
   if (response && response.status === 200) {
     console.log("response", response);
-    return redirect("/gallery");
+    return redirect("/checkout");
   }
 
   return response;
