@@ -76,7 +76,7 @@ const YasCarousel = () => {
       </div>
       <div>
         <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2734.jpg?t=2024-03-20T20%3A57%3A53.255Z"
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2734.jpg"
           alt="Picture of mountains at Max Patch"
         />
         <p className="legend"></p>
@@ -90,7 +90,7 @@ const YasCarousel = () => {
       </div>
       <div>
         <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2748.jpg?t=2024-03-20T20%3A56%3A30.320Z"
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2748.jpg"
           alt="Picture of the sunset at Max Patch"
         />
         <p className="legend"></p>

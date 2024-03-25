@@ -101,9 +101,12 @@ def create_checkout_session():
         ui_mode='embedded',
         line_items=[
             {
-                'price' : 'price_1OyDsLDOd26wYEUAJFMRUvtC',
+                'price' : 'price_1OyGLKDOd26wYEUA3quaTLGE',
                 'quantity': 1,
             },
+            
+
+           
         ],
         mode='payment',
         return_url="http://localhost:5173/"

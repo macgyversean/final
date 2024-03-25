@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Pricing.module.css";
 
 const Pricing = () => {
   return (
@@ -61,6 +60,28 @@ const Pricing = () => {
             className="PricingImage"
           ></img>
         </div>
+      </div>
+      <div className="yasContainer">
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2682.jpg"
+          className="PricingImage"
+        ></img>
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2814.jpg"
+          className="PricingImage"
+        ></img>
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A2946.jpg"
+          className="PricingImage"
+        ></img>
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A3651-2.jpg"
+          className="PricingImage"
+        ></img>
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/yas/1Q8A3768.jpg"
+          className="PricingImage"
+        ></img>
       </div>
     </div>
   );

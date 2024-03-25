@@ -21,11 +21,29 @@ nav ul {
 }
 .Texts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
   background-color: antiquewhite;
 }
+.yasContainer {
+  display: flex;
+  float: left;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 20%;
+}
 
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  overflow-wrap: break-word;
+}
 @media screen and (max-width: 550px) {
   nav ul {
     flex-direction: column;
