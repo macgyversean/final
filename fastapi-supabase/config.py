@@ -1,6 +1,14 @@
-url="https://hhomygevdtpekopdoudb.supabase.co"
-api="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhob215Z2V2ZHRwZWtvcGRvdWRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTAxNjA3ODEsImV4cCI6MjAyNTczNjc4MX0.Z83H4lJBe35p5aPfdq4c0O8ahsyrWeNA3ONyxY7Hjz4"
+from fastapi import HTTPException, status
+import os
+from dotenv import load_dotenv
 
+from pathlib import Path
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
 
+class Settings:
+    SUPABASE_URL = os.getenv("URL")
+    SUPABASE_ANON_KEY = os.getenv("API")
+    STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")  
 
-
+settings = Settings()

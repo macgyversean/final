@@ -8,12 +8,15 @@ from db.supabase import create_supabase_client
 import bcrypt
 import stripe
 import os
+from config import settings
 from fastapi import FastAPI
 from app.models import User
 from db.supabase import create_supabase_client
 from Bookings import Bookings
 
 
+
+stripe.api_key = settings.STRIPE_SECRET_KEY
 app = FastAPI()
 
 # Initialize supabase client
@@ -39,9 +42,6 @@ app.add_middleware(
 
 
 
-# def user_exists(key: str = "email", value: str = None):
-#     user = supabase.from_("users").select("*").eq(key, value).execute()
-#     return len(user.data) > 0
 
 @app.get("/")
 def get_users():
@@ -87,11 +87,11 @@ async def add_booking(request: Bookings):
     }).execute()
     return res
 
-@app.get("/mybookings")
-def get_bookings():
-    user_response = supabase.auth.get_user()
-    response = supabase.table('Bookings').select("*").eq("Owner_ID",user_response.user.id).execute()
-    return response
+# @app.get("/mybookings")
+# def get_bookings():
+#     user_response = supabase.auth.get_user()
+#     response = supabase.table('Bookings').select("*").eq("Owner_ID",user_response.user.id).execute()
+#     return response
 
 @app.post("/create-checkout-session")
 def create_checkout_session():
@@ -100,7 +100,7 @@ def create_checkout_session():
         ui_mode='embedded',
         line_items=[
             {
-                'price' : 'price_1OxFXIDOd26wYEUAUFdxFZFo',
+                'price' : 'price_1OyDsLDOd26wYEUAJFMRUvtC',
                 'quantity': 1,
             },
         ],

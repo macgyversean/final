@@ -1,6 +1,8 @@
 from supabase import Client, create_client
-from config import api, url
+from config import  settings
 
+url = settings.SUPABASE_URL
+api = settings.SUPABASE_ANON_KEY
 api_url: str = url
 key: str = api
 

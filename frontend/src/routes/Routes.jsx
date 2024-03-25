@@ -12,7 +12,7 @@ import KuwaitGallery from "./KuwaitPage";
 import YasGallery from "./YasminePage";
 import MaxPatchGallery from "./MaxPatchPage";
 import Logout, { loader as logoutLoader } from "./Logout";
-import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
+// import ClientBookings, { loader as bookingLoader } from "./ClientBookings";
 import ProtectedRouteLayout from "../pages/ProtectedLayout";
 import FilloutForm, { action as FormAction } from "./Form";
 import Pricing from "./Pricing";
@@ -90,12 +90,12 @@ const Routes = () => {
     {
       element: <ProtectedRouteLayout />,
       children: [
-        {
-          path: "/myBookings",
-          element: <ClientBookings />,
-          loader: bookingLoader,
-          errorElement: <Error />,
-        },
+        // {
+        //   path: "/myBookings",
+        //   element: <ClientBookings />,
+        //   loader: bookingLoader,
+        //   errorElement: <Error />,
+        // },
         {
           path: "/form",
           element: <FilloutForm />,
