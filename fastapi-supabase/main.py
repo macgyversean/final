@@ -104,9 +104,6 @@ def create_checkout_session():
                 'price' : 'price_1OyGLKDOd26wYEUA3quaTLGE',
                 'quantity': 1,
             },
-            
-
-           
         ],
         mode='payment',
         return_url="http://localhost:5173/"

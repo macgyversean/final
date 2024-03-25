@@ -51,7 +51,7 @@ const YasGallery = () => {
   return (
     <>
       <Link to="/Form">
-        <button>
+        <button className="ChatBTN">
           <p>Let's Talk</p>
         </button>
       </Link>
