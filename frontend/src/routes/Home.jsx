@@ -34,16 +34,16 @@ const Home = () => {
             outdoors. I am a very outgoing person and love to meet new people.
           </p>
         </div>
-        <div>
-          <img
-            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0362.jpg"
-            className="HomeImages"
-          ></img>
-        </div>
+
+        <img
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A0362.jpg"
+          className="about-me"
+        ></img>
+
         <div>
           <img
             src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A1869.jpg"
-            className="HomeImages"
+            className="about-me"
           ></img>
         </div>
         <div>

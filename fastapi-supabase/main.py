@@ -8,12 +8,13 @@ from db.supabase import create_supabase_client
 import bcrypt
 import stripe
 import os
+from tkinter import *
+import tkinter.messagebox
 from config import settings
 from fastapi import FastAPI
 from app.models import User
 from db.supabase import create_supabase_client
 from Bookings import Bookings
-
 
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -105,15 +106,15 @@ def create_checkout_session():
             },
         ],
         mode='payment',
-        return_url="http://localhost:8000/return?session_id={CHECKOUT_SESSION_ID}",
+        return_url="http://localhost:5173/"
     )
-    print(session)
-    print(session.id)
     return session
+
 
 @app.get('/session-status')
 def session_status(request):
   session = stripe.checkout.Session.retrieve(request.args.get('session_id'))
 
   return session
+
 

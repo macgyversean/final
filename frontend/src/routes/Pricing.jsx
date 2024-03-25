@@ -6,7 +6,7 @@ const Pricing = () => {
     <div>
       <img
         src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/DSC02667.jpg"
-        className="PricingImage"
+        className="PricingImage "
       ></img>
       <ul className="Texts">
         <li className="Text1">

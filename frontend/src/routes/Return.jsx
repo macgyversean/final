@@ -7,7 +7,7 @@ const Return = () => {
     const urlParams = new URLSearchParams(queryString);
     const sessionId = urlParams.get("session_id");
 
-    const url = `${import.meta.env.VITE_SOURCE_URL}/session-status`;
+    const url = `/session-status?session_id=${sessionId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
