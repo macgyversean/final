@@ -8,7 +8,7 @@ const ProtectedLayout = () => {
   //check if user is authenticated
   if (!isAuth) {
     // if not authenticated, redirect to the login page
-    return <Navigate to="/login" />;
+    return <Navigate to="/register" />;
   }
   // if autheticated, render the child routes...
   return <Layout />;

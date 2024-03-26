@@ -24,7 +24,7 @@ export async function action({ request }) {
 const UserCreate = () => {
   return (
     <>
-      <h2>URL Submit Form</h2>
+      <h2>Register for an account</h2>
       <Form method="post">
         <label>
           Email

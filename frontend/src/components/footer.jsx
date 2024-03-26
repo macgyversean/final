@@ -8,11 +8,9 @@ const Footer = () => {
           <a href="/">Home</a>
         </ul>
         <ul>
-          <a href="/booking">Gallery</a>
+          <a href="/gallery">Gallery</a>
         </ul>
-        <ul>
-          <a href="/form">Contact</a>
-        </ul>
+
         <p className="footerText">
           © 2024 SeanExperience Photograpy. All rights reserved.
         </p>

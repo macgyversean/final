@@ -13,6 +13,8 @@ const Gallery = () => {
       <YasmineCard />
       <KuwaitCard />
       <MyCard />
+
+      <div></div>
     </div>
   );
 };
