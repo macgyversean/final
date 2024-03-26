@@ -9,6 +9,8 @@ import Login, { action as loginAction } from "./Login";
 import Gallery from "./Gallery";
 import JaviGallery from "./JaviPage";
 import KuwaitGallery from "./KuwaitPage";
+import FilloutForm1, { action as FormAction1 } from "./Form1";
+import FilloutForm2, { action as FormAction2 } from "./Form2";
 import YasGallery from "./YasminePage";
 import MaxPatchGallery from "./MaxPatchPage";
 import Logout, { loader as logoutLoader } from "./Logout";
@@ -17,6 +19,8 @@ import ProtectedRouteLayout from "../pages/ProtectedLayout";
 import FilloutForm, { action as FormAction } from "./Form";
 import Pricing from "./Pricing";
 import Checkout from "./Checkout";
+import Checkout1 from "./Checkout1";
+import Checkout2 from "./Checkout2";
 // import Return from "./Return";
 const Routes = () => {
   const { isAuth } = useAuth();
@@ -78,6 +82,14 @@ const Routes = () => {
           path: "/checkout",
           element: <Checkout />,
         },
+        {
+          path: "/checkout1",
+          element: <Checkout1 />,
+        },
+        {
+          path: "/checkout2",
+          element: <Checkout2 />,
+        },
         // {
         //   path: "/return",
         //   element: <Return />,
@@ -100,6 +112,16 @@ const Routes = () => {
           path: "/form",
           element: <FilloutForm />,
           action: FormAction,
+        },
+        {
+          path: "/form1",
+          element: <FilloutForm1 />,
+          action: FormAction1,
+        },
+        {
+          path: "/form2",
+          element: <FilloutForm2 />,
+          action: FormAction2,
         },
       ],
     },

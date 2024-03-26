@@ -88,6 +88,38 @@ async def add_booking(request: Bookings):
     }).execute()
     return res
 
+@app.post("/Bookings1")
+async def add_booking(request: Bookings):
+
+
+    res = supabase.table('Bookings').insert({
+        "name": request.name,
+        "email": request.email,
+        "phone": request.phone,
+        "location_of_shoot": request.location_of_shoot,
+        "message": request.message,
+        "date": request.date,
+        "Owner_ID": request.Owner_ID
+       
+    }).execute()
+    return res
+
+@app.post("/Bookings2")
+async def add_booking(request: Bookings):
+
+
+    res = supabase.table('Bookings').insert({
+        "name": request.name,
+        "email": request.email,
+        "phone": request.phone,
+        "location_of_shoot": request.location_of_shoot,
+        "message": request.message,
+        "date": request.date,
+        "Owner_ID": request.Owner_ID
+       
+    }).execute()
+    return res
+
 # @app.get("/mybookings")
 # def get_bookings():
 #     user_response = supabase.auth.get_user()
@@ -110,6 +142,37 @@ def create_checkout_session():
     )
     return session
 
+@app.post("/create-checkout-session1")
+def create_checkout_session():
+    session = stripe.checkout.Session.create(
+        payment_method_types=['card'],
+        ui_mode='embedded',
+        line_items=[
+            {
+                'price' : 'price_1OyDsLDOd26wYEUAJFMRUvtC',
+                'quantity': 1,
+            },
+        ],
+        mode='payment',
+        return_url="http://localhost:5173/"
+    )
+    return session
+
+@app.post("/create-checkout-session2")
+def create_checkout_session():
+    session = stripe.checkout.Session.create(
+        payment_method_types=['card'],
+        ui_mode='embedded',
+        line_items=[
+            {
+                'price' : 'price_1OyGLsDOd26wYEUAuqEVtcVl',
+                'quantity': 1,
+            },
+        ],
+        mode='payment',
+        return_url="http://localhost:5173/"
+    )
+    return session
 
 @app.get('/session-status')
 def session_status(request):

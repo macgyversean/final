@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
@@ -17,6 +18,13 @@ const Pricing = () => {
             <li>Online gallery</li>
           </ul>
           <p>Price: $200</p>
+
+          <Link to="/Form">
+            <button type="button" className="Pricingbutton">
+              {" "}
+            </button>
+            Book Now
+          </Link>
         </li>
         <br></br>
         <li className="Text2">
@@ -28,6 +36,12 @@ const Pricing = () => {
             <li>Online gallery</li>
           </ul>
           <p>Price: $350</p>
+          <Link to="/Form1">
+            <button type="button" className="Pricingbutton">
+              {" "}
+            </button>
+            Book Now
+          </Link>
         </li>
         <br></br>
         <li className="Text3">
@@ -39,6 +53,12 @@ const Pricing = () => {
             <li>Online gallery</li>
           </ul>
           <p>Price: $500</p>
+          <Link to="/Form2">
+            <button type="button" className="Pricingbutton">
+              {" "}
+            </button>
+            Book Now
+          </Link>
         </li>
       </ul>
       <div className="PricingImages">
