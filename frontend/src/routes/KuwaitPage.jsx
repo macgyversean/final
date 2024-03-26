@@ -1,6 +1,7 @@
 // import styles from "./Javi.modules.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Link } from "react-router-dom";
+import PhotoButton from "../components/PhotoButton";
 
 const KuwaitGallery = () => {
   const photoArray = [
@@ -26,9 +27,9 @@ const KuwaitGallery = () => {
   return (
     <>
       <Link to="/Form4">
-        <button className="ChatBTN">
+        <PhotoButton className="ChatBTN">
           <p>Let's Talk</p>
-        </button>
+        </PhotoButton>
       </Link>
       <div style={{ padding: "10px" }}>
         <ResponsiveMasonry

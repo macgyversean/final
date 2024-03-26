@@ -5,6 +5,7 @@ import ReactDatePicker from "react-datepicker";
 import reactCardFlip from "react-card-flip";
 import { Link } from "react-router-dom";
 import JaviCarousel from "./Data/javiCarousel";
+import PhotoButton from "./PhotoButton";
 export const JaviCard = ({ image }) => {
   return (
     <div className="card-container">
