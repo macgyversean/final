@@ -120,6 +120,22 @@ async def add_booking(request: Bookings):
     }).execute()
     return res
 
+@app.post("/Bookings3")
+async def add_booking(request: Bookings):
+
+
+    res = supabase.table('Bookings').insert({
+        "name": request.name,
+        "email": request.email,
+        "phone": request.phone,
+        "location_of_shoot": request.location_of_shoot,
+        "message": request.message,
+        "date": request.date,
+        "Owner_ID": request.Owner_ID
+       
+    }).execute()
+    return res
+
 # @app.get("/mybookings")
 # def get_bookings():
 #     user_response = supabase.auth.get_user()

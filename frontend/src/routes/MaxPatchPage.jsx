@@ -16,7 +16,7 @@ const MaxPatchGallery = () => {
   ];
   return (
     <>
-      <Link to="/Form">
+      <Link to="/Form4">
         <button className="ChatBTN">
           <p>Let's Talk</p>
         </button>

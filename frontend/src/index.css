@@ -33,6 +33,16 @@ nav ul {
   margin-left: auto;
   max-width: 20%;
 }
+.Texts {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .message {
   display: flex;
@@ -51,6 +61,14 @@ nav ul {
   background-color: rgb(180 180 229);
   align-items: end;
 }
+.Pricingbutton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: end;
+  width: 55px;
+  height: 40px;
+}
 @media screen and (max-width: 550px) {
   nav ul {
     flex-direction: column;
@@ -66,5 +84,10 @@ nav ul {
 @media screen and (max-width: 410px) {
   .footerText {
     flex-shrink: auto;
+  }
+}
+@media screen and (max-width: 410px) {
+  .Pricingbutton {
+    flex-direction: column;
   }
 }

@@ -21,9 +21,8 @@ const Pricing = () => {
 
           <Link to="/Form">
             <button type="button" className="Pricingbutton">
-              {" "}
+              Book Now
             </button>
-            Book Now
           </Link>
         </li>
         <br></br>
@@ -38,9 +37,8 @@ const Pricing = () => {
           <p>Price: $350</p>
           <Link to="/Form1">
             <button type="button" className="Pricingbutton">
-              {" "}
+              Book Now
             </button>
-            Book Now
           </Link>
         </li>
         <br></br>
@@ -55,9 +53,8 @@ const Pricing = () => {
           <p>Price: $500</p>
           <Link to="/Form2">
             <button type="button" className="Pricingbutton">
-              {" "}
+              Book Now
             </button>
-            Book Now
           </Link>
         </li>
       </ul>

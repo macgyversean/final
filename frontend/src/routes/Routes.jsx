@@ -21,6 +21,7 @@ import Pricing from "./Pricing";
 import Checkout from "./Checkout";
 import Checkout1 from "./Checkout1";
 import Checkout2 from "./Checkout2";
+import FilloutForm3, { action as FormAction3 } from "./Form4";
 // import Return from "./Return";
 const Routes = () => {
   const { isAuth } = useAuth();
@@ -122,6 +123,11 @@ const Routes = () => {
           path: "/form2",
           element: <FilloutForm2 />,
           action: FormAction2,
+        },
+        {
+          path: "/form4",
+          element: <FilloutForm3 />,
+          action: FormAction3,
         },
       ],
     },
