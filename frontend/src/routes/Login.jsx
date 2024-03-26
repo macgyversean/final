@@ -59,7 +59,9 @@ const login = () => {
         Your Password
         <input type="password" name="password" />
       </label>
-      <button type="submit">Login User</button>
+      <button id="bottone1">
+        <strong>Login User</strong>
+      </button>
     </Form>
   ) : (
     <Navigate to="/gallery" />

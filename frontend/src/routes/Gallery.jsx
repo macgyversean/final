@@ -12,7 +12,7 @@ const Gallery = () => {
       <JaviCard />
       <YasmineCard />
       <KuwaitCard />
-      <MyCard />
+      {/* <MyCard /> */}
 
       <div></div>
     </div>

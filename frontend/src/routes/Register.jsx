@@ -34,7 +34,9 @@ const UserCreate = () => {
           Password
           <input type="password" name="password" />
         </label>
-        <button type="submit">Add New User</button>
+        <button id="bottone1">
+          <strong>Register User</strong>
+        </button>
       </Form>
     </>
   );

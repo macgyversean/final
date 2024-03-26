@@ -15,13 +15,13 @@ export const JaviCard = ({ image }) => {
           <div className="full-container">
             <h3>Sarasota</h3>
             <Link to="/JaviPage">
-              <button>
-                <p>View Gallery</p>
+              <button id="bottone1">
+                <strong>View Gallery</strong>
               </button>
             </Link>
             <Link to="/Form4">
-              <button>
-                <p>Book a date</p>
+              <button id="bottone1">
+                <strong>Book a Date</strong>
               </button>
             </Link>
           </div>

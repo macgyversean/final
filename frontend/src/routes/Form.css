@@ -23,7 +23,7 @@
 
 .form-container {
   width: 400px;
-  background: linear-gradient(#081007, #050805) padding-box,
+  background: linear-gradient(#847a70, #121010) padding-box,
     linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
@@ -56,7 +56,7 @@
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #717171;
+  color: #f5f5f5;
   font-weight: 600;
   font-size: 12px;
 }
@@ -69,6 +69,7 @@
   font-family: inherit;
   background-color: transparent;
   border: 1px solid #414141;
+  margin-left: 2px;
 }
 
 .form-container .form-group textarea {
@@ -103,10 +104,10 @@
   justify-content: center;
   align-self: flex-start;
   font-family: inherit;
-  color: #717171;
+  color: #242121;
   font-weight: 600;
   width: 40%;
-  background: #313131;
+  background: #ebedc2;
   border: 1px solid #414141;
   padding: 12px 16px;
   font-size: inherit;

@@ -17,11 +17,11 @@ const Pricing = () => {
             <li>30 edited photos</li>
             <li>Online gallery</li>
           </ul>
-          <p>Price: $200</p>
+          <p className="priceSize">Price: $200</p>
 
           <Link to="/Form">
-            <button type="button" className="Pricingbutton">
-              Book Now
+            <button id="bottone1">
+              <strong>Book Now</strong>
             </button>
           </Link>
         </li>
@@ -34,10 +34,10 @@ const Pricing = () => {
             <li>45 edited photos</li>
             <li>Online gallery</li>
           </ul>
-          <p>Price: $350</p>
+          <p className="priceSize">Price: $350</p>
           <Link to="/Form1">
-            <button type="button" className="Pricingbutton">
-              Book Now
+            <button id="bottone1">
+              <strong>Book Now</strong>
             </button>
           </Link>
         </li>
@@ -50,10 +50,10 @@ const Pricing = () => {
             <li>60 edited photos</li>
             <li>Online gallery</li>
           </ul>
-          <p>Price: $500</p>
+          <p className="priceSize">Price: $500</p>
           <Link to="/Form2">
-            <button type="button" className="Pricingbutton">
-              Book Now
+            <button id="bottone1">
+              <strong>Book Now</strong>
             </button>
           </Link>
         </li>

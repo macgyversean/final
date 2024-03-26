@@ -78,17 +78,17 @@ const FilloutForm3 = () => {
             cols="50"
             required=""
           ></textarea>
+          <label>
+            Date of shoot
+            <ReactDatePicker
+              dateFormat="yyyy-MM-dd"
+              value={date}
+              selected={date}
+              onChange={(date) => setDate(date)}
+              name="date"
+            />
+          </label>
         </div>
-        <label>
-          Date of shoot
-          <ReactDatePicker
-            dateFormat="yyyy-MM-dd"
-            value={date}
-            selected={date}
-            onChange={(date) => setDate(date)}
-            name="date"
-          />
-        </label>
         <label>
           <input
             type="hidden"
