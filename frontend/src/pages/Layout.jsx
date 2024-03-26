@@ -6,9 +6,9 @@ const primaryNav = [
   { title: "Gallery", url: "/gallery" },
   { title: "Pricing", url: "/pricing" },
   // { title: "Booking", url: "/booking" },
-  { title: "login", url: "/login" },
-  { title: "register", url: "/register" },
-  { title: "logout", url: "/logout" },
+  { title: "Login", url: "/login" },
+  { title: "Register", url: "/register" },
+  { title: "Logout", url: "/logout" },
   // { title: "My Bookings", url: "/mybookings" },
   { title: "Form", url: "/form4" },
 ];

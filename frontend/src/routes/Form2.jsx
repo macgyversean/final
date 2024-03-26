@@ -51,28 +51,34 @@ export async function action({ request }) {
 const FilloutForm2 = () => {
   const [date, setDate] = useState(new Date());
   return (
-    <Form method="post">
-      <div className="forms1">
-        <label>
-          Your name
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Your Email
-          <input type="text" name="email" />
-        </label>
-        <label>
-          Your phone
-          <input type="number" name="phone" />
-        </label>
-        <label>
-          Location of shoot
-          <input type="text" name="location_of_shoot" />
-        </label>
-        <label>
-          Your message
-          <textarea name="message" className="message" />
-        </label>
+    <Form method="post" className="fullPage">
+      <div className="form-container">
+        <div className="form-group">
+          <label>
+            Your name
+            <input type="text" name="name" />
+          </label>
+          <label className="email">Your Email</label>
+          <input type="text" id="email" name="email" required="" />
+          <label>
+            Location of Shoot
+            <input type="text" name="location_of_shoot" />
+          </label>
+          <label>
+            Your phone
+            <input type="number" name="phone" />
+          </label>
+        </div>
+        <div className="form-group">
+          <label>How Can We Help You?</label>
+          <textarea
+            name="message"
+            id="textarea"
+            rows="10"
+            cols="50"
+            required=""
+          ></textarea>
+        </div>
         <label>
           Date of shoot
           <ReactDatePicker
@@ -91,7 +97,9 @@ const FilloutForm2 = () => {
             required
           />
         </label>
-        <button type="submit">Submit Form</button>
+        <button className="form-submit-btn" type="submit">
+          Submit
+        </button>
       </div>
     </Form>
   );

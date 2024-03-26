@@ -36,17 +36,17 @@ const Routes = () => {
           element: <Home />,
         },
         {
-          path: "/login",
+          path: "/Login",
           element: <Login />,
           action: loginAction,
         },
         {
-          path: "/logout",
+          path: "/Logout",
           element: <Logout />,
           loader: logoutLoader,
         },
         {
-          path: "/register",
+          path: "/Register",
           element: <Register />,
           action: registeraction,
         },

@@ -28,11 +28,12 @@ const Home = () => {
             className="Images"
           ></img>
           <p className="about-me-text">
-            Hey, I am Sean I am a photographer and a web developer. I have been
-            a photographer since 2019 and a web developer since 2024. I have a
-            passion for volleyball, rockclimbing, adrenaline junkie, and just
-            anything outdoors. I am a very outgoing person and love to meet new
-            people.
+            Hello, I am Sean I am a photographer and a web developer. I have
+            been a photographer since 2019 and a web developer since 2024. I
+            have a passion for volleyball, rockclimbing, adrenaline junkie, and
+            just anything outdoors. I am a very outgoing person and love to meet
+            new people. Here are some of my photos you can see how I take my
+            pictures and how I edit them, and see if I am a fit for your vision.
           </p>
         </div>
 

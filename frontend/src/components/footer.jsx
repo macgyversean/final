@@ -10,8 +10,9 @@ const Footer = () => {
         <ul>
           <a href="/gallery">Gallery</a>
         </ul>
-
+        <br />
         <p className="footerText">
+          {" "}
           © 2024 SeanExperience Photograpy. All rights reserved.
         </p>
       </div>

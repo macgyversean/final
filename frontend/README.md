@@ -1,8 +1,20 @@
-# React + Vite
+# SeanExperience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+Home
+Gallery
+Pricing
+Login
+Register
+Logout
+Form
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- React-Date-Picker for my forms
+- React-Masonry for my gallery
+- Stripe API for handling checkout on my Prices page
+- Form for anything that they may want thats not listed on the price page such as: wedding, travel destinations etc..
+- carousels for my image cards
+- Supabase for handeling Authentication, storage of images, and storage of Users
