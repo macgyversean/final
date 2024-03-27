@@ -11,7 +11,7 @@ const Pricing = () => {
       <ul className="Texts">
         <li className="Text1">
           <h2>Basic Package</h2>
-          <p>Includes:</p>
+
           <ul>
             <li>1-hour photo session</li>
             <li>30 edited photos</li>
@@ -28,7 +28,7 @@ const Pricing = () => {
         <br></br>
         <li className="Text2">
           <h2>Standard Package</h2>
-          <p>Includes:</p>
+
           <ul>
             <li>2-hour photo session</li>
             <li>45 edited photos</li>
@@ -44,7 +44,7 @@ const Pricing = () => {
         <br></br>
         <li className="Text3">
           <h2>Premium Package</h2>
-          <p>Includes:</p>
+
           <ul>
             <li>4-hour photo session</li>
             <li>60 edited photos</li>
