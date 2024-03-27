@@ -28,18 +28,8 @@ const Home = () => {
             className="Images"
           ></img>
           <p className="about-me-text">
-            Hello, I am Sean I am a photographer and a software developer. I
-            have been a photographer since 2019 and a software developer
-            starting in 2024. I have a passion for volleyball, rockclimbing,
-            adrenaline junkie, and just anything outdoors. I am a very outgoing
-            person and love to meet new people. Here are some of my photos you
-            can see how I take my pictures and how I edit them. I take candid
-            photos so I will have you just doing regular everyday things and
-            take photos during that. I think it looks much more natural than
-            having somone who is uncomfortable infront of a camera make poses. I
-            enjoy a bit darker tones for just one on one sessions, products and
-            landscapes. I work with lighter tones for weddings, engagements, and
-            elopements unless asked otherwise. Can't wait to work with you!
+            Hello, I am Sean I am a photographer and a software developer I am
+            based in Greenville, South Carolina.
           </p>
         </div>
 
@@ -47,10 +37,17 @@ const Home = () => {
           src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/IMG_1881.JPG"
           className="about-me"
         ></img>
-        <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8520.jpg"
-          className="about-me"
-        ></img>
+        <div className="MaxPatch">
+          <img
+            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8520.jpg"
+            className="about-me"
+          ></img>
+          <p className="MaxPatch-text">
+            I enjoy a bit darker tones for just one on one sessions, products
+            and landscapes. I work with lighter tones for weddings, engagements,
+            and elopements unless asked otherwise. Can't wait to work with you!
+          </p>
+        </div>
         <div>
           <img
             src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/A76A1869.JPG"

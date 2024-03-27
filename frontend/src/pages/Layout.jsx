@@ -8,15 +8,15 @@ const primaryNav = [
   // { title: "Booking", url: "/booking" },
   { title: "Login", url: "/login" },
   { title: "Register", url: "/register" },
-  { title: "Logout", url: "/logout" },
   // { title: "My Bookings", url: "/mybookings" },
   { title: "Form", url: "/form4" },
+  { title: "Logout", url: "/logout" },
 ];
 
 const Layout = () => {
   return (
     <>
-      <Navigation navItems={primaryNav} />
+      <Navigation className="NavigationBar" navItems={primaryNav} />
       <Outlet />
     </>
   );

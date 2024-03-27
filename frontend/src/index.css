@@ -8,10 +8,19 @@
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 3.5rem;
   list-style: none;
+  border-color: black;
   background-color: antiquewhite;
-  padding: 20px;
+  padding: 18px;
+  font-size: large;
+  .li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
 }
 .footerText {
   flex: auto;
@@ -46,6 +55,26 @@ nav ul {
   .p {
     font-size: large;
   }
+}
+.MaxPatch {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  float: left;
+  border: 10px;
+  background-color: antiquewhite;
+  align-items: center;
+}
+.MaxPatch-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  line-height: 2;
+  float: right;
+  border: 10px;
+  background-color: antiquewhite;
+  padding: 10px;
 }
 
 .message {
