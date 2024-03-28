@@ -38,6 +38,7 @@ StrEnum==0.4.15
 stripe==8.8.0
 supabase==2.4.0
 supafunc==0.3.3
+tk==0.1.0
 typing_extensions==4.10.0
 ujson==5.9.0
 urllib3==2.2.1
