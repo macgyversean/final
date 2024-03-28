@@ -19,7 +19,7 @@ const Home = () => {
     <div className="background-image">
       <div className="about-me">
         <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/BlakeandEmily.png?t=2024-03-27T13%3A34%3A58.850Z"
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/blakenemily.png?t=2024-03-28T17%3A19%3A00.212Z"
           className="HomeImages"
         ></img>
         <div className="about-me-box">
