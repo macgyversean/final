@@ -8,8 +8,6 @@ from db.supabase import create_supabase_client
 import bcrypt
 import stripe
 import os
-from tkinter import *
-import tkinter.messagebox
 from config import settings
 from fastapi import FastAPI
 from app.models import User
