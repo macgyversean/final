@@ -17,9 +17,3 @@
   background-color: #faf9f6;
   max-width: 1200px;
 }
-.Texts {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: antiquewhite;
-}

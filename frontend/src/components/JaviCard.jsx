@@ -21,7 +21,7 @@ export const JaviCard = ({ image }) => {
             </Link>
             <Link to="/Form4">
               <button id="bottone1">
-                <strong>Book a Date</strong>
+                <strong>Contact</strong>
               </button>
             </Link>
           </div>

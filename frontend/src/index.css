@@ -8,7 +8,7 @@
 
 nav ul {
   display: flex;
-  gap: 3.5rem;
+  gap: 1.5rem;
   list-style: none;
   border-color: black;
   background-color: antiquewhite;
@@ -16,6 +16,7 @@ nav ul {
   font-size: large;
   .li {
     display: flex;
+   
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -46,41 +47,40 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   background-color: antiquewhite;
+  flex-wrap: wrap;
   li {
+    flex: 1 0 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    ul{
+      padding:0;
+    }
   }
   .p {
     font-size: large;
   }
 }
 .MaxPatch {
+  flex-wrap: wrap;
   display: flex;
+  width: 100%;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  float: left;
   border: 10px;
   background-color: antiquewhite;
   align-items: center;
+  .ImageWrapper{
+flex: 1 0 200px
+  }
+  p{
+    flex: 1 1 200px;
+  }
 }
 .MaxPatch-text {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  line-height: 2;
-  float: right;
-  border: 10px;
   background-color: antiquewhite;
-  padding: 10px;
+  padding: 30px;
 }
 
 .message {
@@ -137,7 +137,7 @@ nav ul {
   box-shadow: 7px 5px 56px -10px #c3d900;
 }
 
-@media screen and (max-width: 550px) {
+ @media screen and (max-width: 550px) {
   nav ul {
     flex-direction: column;
   }
@@ -157,5 +157,15 @@ nav ul {
 @media screen and (max-width: 410px) {
   .Pricingbutton {
     flex-direction: column;
+  } */
+}
+@media screen and (max-width: 410px) {
+  .MaxPatch-text {
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .MaxPatch-text {
+    line-height: 3;
   }
 }

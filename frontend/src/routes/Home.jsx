@@ -32,16 +32,17 @@ const Home = () => {
             based in Greenville, South Carolina.
           </p>
         </div>
-
         <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/IMG_1881.JPG"
-          className="about-me"
+          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/home/IMG_1881%20(1).jpg"
+          style={{ width: "100%" }}
         ></img>
         <div className="MaxPatch">
-          <img
-            src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8520.jpg"
-            className="about-me"
-          ></img>
+          <div className="ImageWrapper">
+            <img
+              src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/maxpatch/IMG_8520.jpg"
+              style={{ width: "100%" }}
+            ></img>
+          </div>
           <p className="MaxPatch-text">
             I enjoy a bit darker tones for just one on one sessions, products
             and landscapes. I work with lighter tones for weddings, engagements,
