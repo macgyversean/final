@@ -49,17 +49,23 @@
 .footerPlan {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   background-color: antiquewhite;
   justify-content: space-between;
-
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
   bottom: 0;
 }
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-links ul {
+  padding: 1rem;
 }
 .PricingImages {
   display: flex;

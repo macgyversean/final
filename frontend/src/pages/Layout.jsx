@@ -6,17 +6,25 @@ const primaryNav = [
   { title: "Gallery", url: "/gallery" },
   { title: "Pricing", url: "/pricing" },
   // { title: "Booking", url: "/booking" },
-  { title: "Login", url: "/login" },
-  { title: "Register", url: "/register" },
+  // { title: "Login", url: "/login" },
+  // { title: "Register", url: "/register" },
   // { title: "My Bookings", url: "/mybookings" },
   { title: "Form", url: "/form4" },
-  { title: "Logout", url: "/logout" },
+  // { title: "Logout", url: "/logout" },
 ];
 
 const Layout = () => {
+  const navItems = localStorage.getItem("access_token")
+    ? [...primaryNav, { title: "Logout", url: "/logout" }]
+    : [
+        ...primaryNav,
+        { title: "Login", url: "/login" },
+        { title: "Register", url: "/register" },
+      ];
+
   return (
     <>
-      <Navigation className="NavigationBar" navItems={primaryNav} />
+      <Navigation className="NavigationBar" navItems={navItems} />
       <Outlet />
     </>
   );

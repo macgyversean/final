@@ -4,18 +4,17 @@ const Footer = () => {
   return (
     <footer className="footerPlan">
       <div className="footer-links">
-        <ul>
+        <ul className="NavLink">
           <a href="/">Home</a>
         </ul>
-        <ul>
+        <ul className="NavLink">
           <a href="/gallery">Gallery</a>
         </ul>
         <br />
-        <p className="footerText">
-          {" "}
-          © 2024 SeanExperience Photograpy. All rights reserved.
-        </p>
       </div>
+      <p className="footerText">
+        © 2024 SeanExperience Photograpy. All rights reserved.
+      </p>
     </footer>
   );
 };

@@ -12,7 +12,7 @@ nav ul {
   list-style: none;
   border-color: black;
   background-color: antiquewhite;
-  padding: 18px;
+  padding: 12px;
   font-size: large;
   .li {
     display: flex;
@@ -23,12 +23,7 @@ nav ul {
     padding: 20px;
   }
 }
-.footerText {
-  flex: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .Texts {
   display: flex;
   justify-content: space-evenly;
@@ -128,6 +123,20 @@ flex: 1 0 200px
 .priceSize {
   font-size: 20px;
 }
+.NavLink{
+  padding: 8px 12px;
+    border-radius: 12px;
+}
+.NavLink a{
+  text-decoration: none;
+  color: black;
+}
+.NavLink:hover {
+  box-shadow: -8px 9px 33px #9f9898;
+  transform: scale(1.05);
+  background-color: #ede6e6c4;
+  transition: all 530ms ease-in-out;
+ }
 #bottone1:hover {
   box-shadow: 7px 5px 56px -14px #c3d900;
 }
