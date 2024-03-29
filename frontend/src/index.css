@@ -137,14 +137,21 @@ flex: 1 0 200px
   background-color: #ede6e6c4;
   transition: all 530ms ease-in-out;
  }
-#bottone1:hover {
-  box-shadow: 7px 5px 56px -14px #c3d900;
-}
 
-#bottone1:active {
-  transform: scale(0.97);
-  box-shadow: 7px 5px 56px -10px #c3d900;
+.fab-fa-instagram{
+  color: #714618;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+/* .fab-fa-instagram  a :hover{
+  box-shadow: -8px 9px 33px #9f9898;
+  transform: scale(1.05);
+  background-color: #ede6e6c4;
+  transition: all 530ms ease-in-out;
+} */
 
  @media screen and (max-width: 550px) {
   nav ul {

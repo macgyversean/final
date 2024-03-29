@@ -1,4 +1,5 @@
 import React from "react";
+import SocialFollowing from "./SocialFollwing";
 
 const Footer = () => {
   return (
@@ -12,6 +13,7 @@ const Footer = () => {
         </ul>
         <br />
       </div>
+      <SocialFollowing />
       <p className="footerText">
         © 2024 SeanExperience Photograpy. All rights reserved.
       </p>
