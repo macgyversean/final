@@ -1,5 +1,6 @@
 import React from "react";
 import SocialFollowing from "./SocialFollwing";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,10 +10,10 @@ const Footer = () => {
           <a href="/">Home</a>
         </ul>
         <ul className="NavLink">
-          <a href="/gallery">Gallery</a>
+          <Link to="/gallery">Gallery</Link>
         </ul>
         <ul className="NavLink">
-          <a href="/form4">Contact</a>
+          <Link to="/form4">Contact</Link>
         </ul>
         <br />
       </div>
