@@ -11,6 +11,9 @@ const Footer = () => {
         <ul className="NavLink">
           <a href="/gallery">Gallery</a>
         </ul>
+        <ul className="NavLink">
+          <a href="/form4">Contact</a>
+        </ul>
         <br />
       </div>
       <SocialFollowing />
