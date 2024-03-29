@@ -18,7 +18,6 @@ const Checkout = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("data", data);
         return data.client_secret;
       });
   }, []);

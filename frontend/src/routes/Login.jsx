@@ -37,7 +37,6 @@ export async function action({ request }) {
     localStorage.setItem("keyname", session.user.id);
     return statusCode === 200 ? true : false;
   } catch (error) {
-    console.error("ERROR: ", error);
     return false;
   }
 }

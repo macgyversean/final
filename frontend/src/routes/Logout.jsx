@@ -13,16 +13,13 @@ export async function loader() {
         authorization: `Bearer ${access_token}`,
       },
     });
-    console.log(response);
+
     const statusCode = response.status;
     return statusCode === 200 ? true : false;
-  } catch (error) {
-    console.error("Error:", error);
-  }
+  } catch (error) {}
 }
 
 const Logout = () => {
-  console.log("WTF???? ");
   const response = useLoaderData();
   const navigate = useNavigate();
   const { setIsAuth } = useAuth();

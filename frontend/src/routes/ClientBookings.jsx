@@ -12,7 +12,7 @@
 
 // const BookingData = () => {
 //   const { data } = useLoaderData();
-//   console.log(data);
+
 //   return (
 //     <>
 //       <h1>My Bookings</h1>

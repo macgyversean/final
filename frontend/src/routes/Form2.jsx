@@ -42,7 +42,6 @@ export async function action({ request }) {
     body: JSON.stringify(logindata),
   });
   if (response && response.status === 200) {
-    console.log("response", response);
     return redirect("/checkout2");
   }
 
