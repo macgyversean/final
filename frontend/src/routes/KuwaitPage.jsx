@@ -27,9 +27,9 @@ const KuwaitGallery = () => {
   return (
     <>
       <Link to="/Form4">
-        <PhotoButton className="ChatBTN">
-          <p>Let's Talk</p>
-        </PhotoButton>
+        <button className="ChatBTN">
+          <p className="NavLink">Let's Talk</p>
+        </button>
       </Link>
       <div style={{ padding: "10px" }}>
         <ResponsiveMasonry

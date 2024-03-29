@@ -92,8 +92,9 @@ flex: 1 0 200px
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(180 180 229);
   align-items: end;
+  border-radius: 18px;
+  margin: 13px;
 }
 .Pricingbutton {
   display: flex;

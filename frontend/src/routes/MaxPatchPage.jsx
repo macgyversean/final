@@ -18,7 +18,7 @@ const MaxPatchGallery = () => {
     <>
       <Link to="/Form4">
         <button className="ChatBTN">
-          <p>Let's Talk</p>
+          <p className="NavLink">Let's Talk</p>
         </button>
       </Link>
       <div style={{ padding: "10px" }}>

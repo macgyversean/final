@@ -23,10 +23,10 @@ const JaviGallery = () => {
   ];
   return (
     <>
-      <div className="Chat">
+      <div>
         <Link to="/Form4">
           <button className="ChatBTN">
-            <p>Let's Talk</p>
+            <p className="NavLink">Let's Talk</p>
           </button>
         </Link>
       </div>
