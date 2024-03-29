@@ -9,7 +9,7 @@ const primaryNav = [
   // { title: "Login", url: "/login" },
   // { title: "Register", url: "/register" },
   // { title: "My Bookings", url: "/mybookings" },
-  { title: "Form", url: "/form4" },
+  { title: "Contact", url: "/form4" },
   // { title: "Logout", url: "/logout" },
 ];
 
