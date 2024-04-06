@@ -19,11 +19,11 @@ const Pricing = () => {
           </ul>
           <p className="priceSize">Price: $200</p>
 
-          {/* <Link to="/Form">
+          <Link to="/Form">
             <button id="bottone1">
               <strong>Book Now</strong>
             </button>
-          </Link> */}
+          </Link>
         </li>
         <br></br>
         <li className="Text2">
