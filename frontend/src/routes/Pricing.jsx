@@ -35,11 +35,11 @@ const Pricing = () => {
             <li>Online gallery</li>
           </ul>
           <p className="priceSize">Price: $350</p>
-          {/* <Link to="/Form1">
+          <Link to="/Form1">
             <button id="bottone1">
               <strong>Book Now</strong>
             </button>
-          </Link> */}
+          </Link>
         </li>
         <br></br>
         <li className="Text3">
@@ -51,11 +51,11 @@ const Pricing = () => {
             <li>Online gallery</li>
           </ul>
           <p className="priceSize">Price: $500</p>
-          {/* <Link to="/Form2">
+          <Link to="/Form2">
             <button id="bottone1">
               <strong>Book Now</strong>
             </button>
-          </Link> */}
+          </Link>
         </li>
       </ul>
       <div className="PricingImages">

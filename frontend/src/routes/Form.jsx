@@ -26,7 +26,6 @@ export async function action({ request }) {
     name,
     email,
     phone,
-    date,
     location_of_shoot,
     message,
     date,
