@@ -21,13 +21,6 @@ const KuwaitCarousel = () => {
     >
       <div>
         <img
-          src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/kuwait/69426195_443161929652143_5381957328876601344_o_443161922985477.jpg"
-          alt="Picture of a tent at Max Patch"
-        />
-        <p className="legend"></p>
-      </div>
-      <div>
-        <img
           src="https://hhomygevdtpekopdoudb.supabase.co/storage/v1/object/public/kuwait/69716833_443147356320267_1731268894309482496_o_443147352986934.jpg"
           alt="Picture of the sunset at Max Patch"
         />

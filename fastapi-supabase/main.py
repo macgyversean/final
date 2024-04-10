@@ -31,6 +31,7 @@ origins = [
     "https://seanexperience.netlify.app",
     "http://seanexperience.com",
      "https://seanexperience.com"
+     "https://main--seanexperience.netlify.app"
   
     
 ]
@@ -106,6 +107,14 @@ async def add_booking(request: Bookings):
     }).execute()
     return res
 
+@app.get("/download")
+ const { data, error } = await supabase
+      .storage
+      .from('tickets')
+      .download(path) 
+
+console.log (data)
+
 @app.post("/Bookings2")
 async def add_booking(request: Bookings):
 
@@ -137,12 +146,6 @@ async def add_booking(request: Bookings):
        
     }).execute()
     return res
-
-# @app.get("/mybookings")
-# def get_bookings():
-#     user_response = supabase.auth.get_user()
-#     response = supabase.table('Bookings').select("*").eq("Owner_ID",user_response.user.id).execute()
-#     return response
 
 @app.post("/create-checkout-session")
 def create_checkout_session():
