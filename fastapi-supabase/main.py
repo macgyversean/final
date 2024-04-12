@@ -110,7 +110,7 @@ async def add_booking(request: Bookings):
 @app.get("/download")
  const { data, error } = await supabase
       .storage
-      .from('tickets')
+      .from('javi')
       .download(path) 
 
 console.log (data)
