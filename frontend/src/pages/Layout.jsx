@@ -8,9 +8,9 @@ const primaryNav = [
   // { title: "Booking", url: "/booking" },
   // { title: "Login", url: "/login" },
   // { title: "Register", url: "/register" },
-  // { title: "My Bookings", url: "/mybookings" },
   { title: "Contact", url: "/form4" },
   // { title: "Logout", url: "/logout" },
+  { title: "My Bookings", url: "/mybookings" },
 ];
 
 const Layout = () => {

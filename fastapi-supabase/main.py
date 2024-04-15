@@ -107,13 +107,6 @@ async def add_booking(request: Bookings):
     }).execute()
     return res
 
-@app.get("/download")
- const { data, error } = await supabase
-      .storage
-      .from('javi')
-      .download(path) 
-
-console.log (data)
 
 @app.post("/Bookings2")
 async def add_booking(request: Bookings):
@@ -143,7 +136,6 @@ async def add_booking(request: Bookings):
         "message": request.message,
         "date": request.date,
         "Owner_ID": request.Owner_ID
-       
     }).execute()
     return res
 
@@ -202,3 +194,15 @@ def session_status(request):
   return session
 
 
+@app.post("/mybookings")
+async def add_booking(request: Bookings):
+    res = supabase.table('Bookings').insert({
+        "name": request.name,
+        "email": request.email,
+        "phone": request.phone,
+        "location_of_shoot": request.location_of_shoot,
+        "message": request.message,
+        "date": request.date,
+        "Owner_ID": request.Owner_ID
+    }).execute()
+    return res
