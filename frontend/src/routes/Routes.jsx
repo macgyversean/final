@@ -139,6 +139,7 @@ const Routes = () => {
     ...protectedRoutes,
   ]);
 
+  // This line renders the router context provided by RouterProvider using the configured router.
   return <RouterProvider router={router} />;
 };
 

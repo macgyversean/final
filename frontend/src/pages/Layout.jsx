@@ -10,7 +10,7 @@ const primaryNav = [
   // { title: "Register", url: "/register" },
   { title: "Contact", url: "/form4" },
   // { title: "Logout", url: "/logout" },
-  { title: "My Bookings", url: "/mybookings" },
+  // { title: "My Bookings", url: "/mybookings" },
 ];
 
 const Layout = () => {
