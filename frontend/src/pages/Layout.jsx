@@ -14,13 +14,13 @@ const primaryNav = [
 ];
 
 const Layout = () => {
-  const navItems = localStorage.getItem("access_token")
-    ? [...primaryNav, { title: "Logout", url: "/logout" }]
-    : [
-        ...primaryNav,
-        { title: "Login", url: "/login" },
-        { title: "Register", url: "/register" },
-      ];
+  // const navItems = localStorage.getItem("access_token")
+  //   ? [...primaryNav, { title: "Logout", url: "/logout" }]
+  //   : [
+  //       ...primaryNav,
+  //       { title: "Login", url: "/login" },
+  //       { title: "Register", url: "/register" },
+  //     ];
 
   return (
     <>
